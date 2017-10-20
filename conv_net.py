@@ -158,10 +158,10 @@ for i in range(num_folds):
       layer1_weights = tf.get_variable("layer1_weights", shape=[1, patch_size, num_channels, depth],
            initializer=tf.contrib.layers.xavier_initializer())
       layer1_biases = tf.Variable(tf.constant(0.001, shape=[depth]))
-      layer2_weights = tf.get_variable("layer2_weights", shape=[patch_size, 1, depth, 4*depth],
+      layer2_weights = tf.get_variable("layer2_weights", shape=[patch_size, 1, depth, 2*depth],
            initializer=tf.contrib.layers.xavier_initializer())
-      layer2_biases = tf.Variable(tf.constant(0.001, shape=[4*depth]))
-      layer3_weights = tf.get_variable("layer3_weights", shape=[4*depth, num_hidden],
+      layer2_biases = tf.Variable(tf.constant(0.001, shape=[2*depth]))
+      layer3_weights = tf.get_variable("layer3_weights", shape=[2*depth, num_hidden],
            initializer=tf.contrib.layers.xavier_initializer())
       layer3_biases = tf.Variable(tf.constant(0.01, shape=[num_hidden]))
       layer4_weights = tf.get_variable("layer4_weights", shape=[num_hidden, num_labels],
