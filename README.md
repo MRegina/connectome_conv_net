@@ -5,7 +5,5 @@ conv_net.py can read in tensors, and contains the necessary functions to create 
  
   
 RESEARCH PAPERS USING THIS SOFTWARE:
-- preprint:
-Meszlényi, R., Buza, K., and Vidnyánszky, Z. (2017). Resting state fMRI functional connectivity-based classification using a convolutional neural network architecture. ArXiv170706682 Cs Stat. Available at: http://arxiv.org/abs/1707.06682.
-- submitted to Frontiers in Neuroinformatics
+- Meszlényi, R., Buza, K., and Vidnyánszky, Z. (2017a). Resting State fMRI Functional Connectivity-Based Classification Using a Convolutional Neural Network Architecture. Front. Neuroinformatics 11. doi:10.3389/fninf.2017.00061
 
