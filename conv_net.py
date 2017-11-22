@@ -43,7 +43,7 @@ def create_train_and_test_folds(num_folds,subjects):
     IDs=subjects.reshape((n,num_folds))
     return IDs
 
-#normalize_tensor standardizes an n dimesional np.array to have zero mean and standard deviation of 1
+#normalize_tensor standardizes an n dimesional np.array to have zero mean and maximal absolute value of 1
 def normalize_tensor(data_tensor):
     data_tensor-=np.mean(data_tensor)
     data_tensor/=np.max(np.abs(data_tensor))
