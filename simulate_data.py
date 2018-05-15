@@ -43,10 +43,10 @@ def create_noise_tensor(rep, numROI):
 #%%
 #create an example dataset from the connectomes
 c_base=np.load("corr_base_connectome.npy")
-c_diff=np.load("corr_base_connectome.npy")
+c_diff=np.load("corr_diff_connectome.npy")
 
 d_base=np.load("dtw_base_connectome.npy")
-d_diff=np.load("dtw_base_connectome.npy")
+d_diff=np.load("dtw_diff_connectome.npy")
 
 rep=75
 numROI=499
